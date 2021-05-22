@@ -11,10 +11,10 @@ public class Home {
 public void openApplication() {
 	homepage.open();
 }
-	@Step
-	public void clickLoginForm() {
-		homepage.clickLoginForm();
-	}
+//	@Step
+//	public void clickLoginForm() {
+//		homepage.clickLoginForm();
+//	}
 	@Step
 	public void enterUsername() {
 		homepage.enterUsername();

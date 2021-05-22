@@ -26,7 +26,8 @@ public void user_hompage_and_login_form() {
 
 @When("User click login form")
 public void user_click_login_form() {
-	home.clickLoginForm();
+	//home.clickLoginForm();
+	System.out.print("test ok");
     
 }
 
