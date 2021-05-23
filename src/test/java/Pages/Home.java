@@ -1,20 +1,27 @@
 package Pages;
 
+import org.openqa.selenium.WebDriver;
+
+import net.serenitybdd.junit.runners.SerenityRunner;
+import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
 
-public class Home {
 
-	TocSportHome homepage; 
-	
-	
+  
+public class Home {
+		                                            	   		    
+TocSportHome homepage; 
+			
 	@Step
-public void openApplication() {
-	homepage.open();
-}
-//	@Step
-//	public void clickLoginForm() {
-//		homepage.clickLoginForm();
-//	}
+public void openApplication() {		 
+	homepage.open();	
+
+	
+	}
+	@Step
+	public void clickLoginForm() {
+		homepage.clickLoginForm();
+	}
 	@Step
 	public void enterUsername() {
 		homepage.enterUsername();

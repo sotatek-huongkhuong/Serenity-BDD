@@ -25,4 +25,5 @@ Feature: Title of your feature
     Given User Hompage and login form
     When User click login form
     And User enter user name and passworld
+    And User click button login
     Then User can verify result

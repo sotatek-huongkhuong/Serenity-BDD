@@ -5,25 +5,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import io.cucumber.java.Before;
 import net.serenitybdd.core.pages.PageObject;
+//import net.thucydides.core.annotations.DefaultUrl;
 
+//@DefaultUrl("https://duckduckgo.com")
 public class TocSportHome extends PageObject{
-	//WebDriver driver=null; 
-	
-//	public void clickLoginForm() {
-//		$(By.xpath("//body/div[@id='gen-nav-commerce-header-v2']/div[3]/div[1]/div[1]/div[1]/div[3]/div[1]/button[1]")).click();
-	//}
+
+	public void clickLoginForm() {
+		$(By.xpath("//body/div[@id='wrapper']/main[@id='main']/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/p[1]/input[1]")).click();
+	}
 	
 	public void enterUsername() {
-		$(By.id("//input[@id='email']")).type("phuongnam.uethy@gmail.com");
+		$(By.xpath("//body/div[@id='wrapper']/main[@id='main']/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/p[1]/input[1]")).type("phuongnam.uethy@gmail.com");
 	}
 	public void enterPassworld() {
-		$(By.id("//input[@id='pass']")).type("phuongnam99");
+		$(By.xpath("//body/div[@id='wrapper']/main[@id='main']/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/p[2]/input[1]")).type("phuongnam99");
 	}
 	public void clickButtonLogin() {
-		$(By.id("//button[@id='u_0_h_W2']")).click();
+		$(By.xpath("/html[1]/body[1]/div[4]/main[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/p[3]/input[3]")).click();
 		
 	}
-	
 }
-
