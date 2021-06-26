@@ -17,8 +17,12 @@ public void EnterPassWrld(String pass) {
 	regis.EnterPass(pass);
 }
 @Step
-public void ClickRegister() {
+public void ClickRegister()
+{
 	regis.clickRegis();
 }
-
+@Step
+public  void GetMessageAfterRegister(){
+	regis.GetResult();
+}
 }

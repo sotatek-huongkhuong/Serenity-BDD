@@ -34,9 +34,8 @@ public class RegisterProcedure {
 	@Then("User verify the resutlt")
 	public void user_verify_the_resutlt() {
 		 check.verifyRegisterResult();
+		 register.GetMessageAfterRegister();
 		
 	   
 	}
-
-	
 }

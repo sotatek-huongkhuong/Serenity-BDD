@@ -15,16 +15,26 @@
 #<> (placeholder)
 #""
 ## (Comments)
-#Sample Feature Definition TemplateFeature: User wanna view account profile
+#Sample Feature Definition Template
+@tag
+Feature: Update Cart and countinue shopping
+  -- Cập nhật giỏ hàng--
 
-  @tag1
-  Scenario Outline: user view account information
-    Given user homepage
-    When user enter <email> and <pass>
-    When user click my account
-    And user click account information
-    Then user can see result
+  Scenario Outline: Continue To Shopping and Update Cart
+    Given User CartPage
+    When User Click Continue Shopping
+    And User Typing <Product>
+    And User Choose new product
+    When User Click Add to cart
+    And User comback to Cart
+    Then User Click Update cart
+    Then User Can navigated To Billing Process
 
-    Examples: 
-      | email               | pass        |
-      | ratlaliko@gmail.com | phuongnam99 |
+    Examples:
+      | Product |
+      | Đồng Hồ |
+
+
+
+
+

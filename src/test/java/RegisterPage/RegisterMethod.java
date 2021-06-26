@@ -14,5 +14,8 @@ public class RegisterMethod extends PageObject {
 	public void clickRegis() {
 		$(By.xpath("//body/div[@id='wrapper']/main[@id='main']/div[3]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/p[3]/input[3]")).click();
 	}
+	public String GetResult(){
+		return $(By.xpath("//body[1]/div[4]/main[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/p[2]")).getText();
+	}
 
 }

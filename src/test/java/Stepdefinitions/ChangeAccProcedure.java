@@ -45,7 +45,7 @@ public class ChangeAccProcedure {
 
 	@When("User Choose Countryside")
 	public void user_choose_countryside() {
-		change.ChooseCountrySide();
+		//change.ChooseCountrySide();
 	   
 	}
 
