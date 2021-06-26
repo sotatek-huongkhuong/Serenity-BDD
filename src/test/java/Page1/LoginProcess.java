@@ -7,6 +7,7 @@ public class LoginProcess {
 	@Step
 	public void openApplication() {
 		login.open();
+		
 	}
 	@Step
 	public void EnterUsername(String user) {
@@ -20,4 +21,8 @@ public class LoginProcess {
 	public void Click() {
 		login.clickLgi();	
 }
+	@Step
+	public void GetResultLogin() {
+		login.getNotifice();
+	}
 }

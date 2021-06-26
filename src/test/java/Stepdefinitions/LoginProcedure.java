@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
+
 public class LoginProcedure {
 	@Steps
 	LoginProcess login; 
@@ -25,7 +26,9 @@ public class LoginProcedure {
 	}
 
 	@Then("I verify the title of hompage")
-	public void i_verify_the_title_of_hompage() throws Throwable {
+	public void i_verify_the_title_of_hompage () throws Throwable {
+	    login.GetResultLogin(); 
 		verify.checklogin();
+		
 	}
 }
