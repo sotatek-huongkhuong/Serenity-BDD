@@ -8,10 +8,11 @@ import net.thucydides.core.annotations.Steps;
 
 public class addTocartProcedure {
 	@Steps
-	AddCartStep add; 
+	AddCartStep add;
 	@Given("user hompage")
-	public void user_hompage() {
+	public void user_hompage() throws Throwable {
 	  add.OpenHomePage();
+	  Thread.sleep(3000);
 	}
 
 	@When("user Enter (.*)$")
@@ -36,6 +37,7 @@ public class addTocartProcedure {
 	@Then("user can view cart")
 	public void user_can_view_cart() throws Throwable {
 	    add.ClickViewCart();
+	    add.GetCartTitle();
 	    Thread.sleep(5000);
 	}
 	

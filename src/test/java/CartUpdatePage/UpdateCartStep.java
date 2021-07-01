@@ -16,7 +16,7 @@ public  void Navigated(){
  update.ClickCartPage();
 }
 @Step
-  public  void ClickContinueShop(){
+  public  void ClickContinueShopping(){
  update.ClickContinue();
 }
 @Step

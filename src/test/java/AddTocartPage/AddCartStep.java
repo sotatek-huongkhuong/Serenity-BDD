@@ -5,6 +5,7 @@ public class AddCartStep {
 	@Step
 	public void OpenHomePage() {
 		add.open();
+		add.Login();
 	}
 	
 	@Step
@@ -26,5 +27,9 @@ public class AddCartStep {
 	@Step
 	public void ClickViewCart() {
 		add.viewcart();
+	}
+	@Step
+	public  void GetCartTitle(){
+		add.getText();
 	}
 }

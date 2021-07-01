@@ -34,4 +34,4 @@ Feature: Change PassWorld User
 
     Examples: 
       | mail                | pssworld    | currentpass | newpass     | passconfirm |
-      | ratlaliko@gmail.com | phuongnam10 | phuongnam10 | phuongnam99 | phuongnam99 |
+      | ratlaliko@gmail.com | phuongnam11 | phuongnam11 | phuongnam99 | phuongnam99 |

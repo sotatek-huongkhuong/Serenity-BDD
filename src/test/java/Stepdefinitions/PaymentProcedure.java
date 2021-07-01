@@ -12,9 +12,7 @@ public class PaymentProcedure {
 @Given("USER CART PAGE")
 public void user_cart_page() {
 	payment.OpentApp();
-   
 }
-
 @When("USER CLICK BILLING PROCESS")
 public void user_click_billing_process() throws Exception {
 	payment.LoginEmail();
@@ -22,9 +20,7 @@ public void user_click_billing_process() throws Exception {
 	Thread.sleep(5000);
 	payment.ClickBilling();
 	Thread.sleep(5000);
-    
 }
-
 @When("USER TYPE COMPANY")
 public void user_type_company() {
 	payment.ClickPaymentProcess();

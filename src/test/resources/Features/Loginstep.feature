@@ -23,7 +23,7 @@
 Feature: Login to website tocSPort
 
   @tag1
-  Scenario Outline: Title of your scenario outline
+  Scenario Outline:Login to website tocSPort
     Given user hompage of tocsport website
     When user enters <username> and <passworld>
     Then I verify the title of hompage

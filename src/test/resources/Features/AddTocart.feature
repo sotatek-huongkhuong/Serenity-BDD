@@ -12,6 +12,6 @@ Feature: Add product to cart
     When user click add to cart
     Then user can view cart
 
-    Examples: 
-      | productname |
-      | Đồng hồ     |
+    Examples:
+      | productname   |
+      | Đồng hồ       |

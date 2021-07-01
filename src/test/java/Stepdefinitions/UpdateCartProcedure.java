@@ -1,5 +1,6 @@
 package Stepdefinitions;
 import CartUpdatePage.UpdateCartStep;
+import lombok.SneakyThrows;
 import net.thucydides.core.annotations.Steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,10 +19,11 @@ public class UpdateCartProcedure {
 
     }
 
+    @SneakyThrows
     @When("User Click Continue Shopping")
-    public void user_click_continue_shopping() throws Exception {
+    public void user_click_continue_shopping()  {
         Thread.sleep(5000);
-        update.ClickContinueShop();
+        update.ClickContinueShopping();
 
     }
 

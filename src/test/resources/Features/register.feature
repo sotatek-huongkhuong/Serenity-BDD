@@ -26,9 +26,9 @@ Feature: Register Account Tocsport Website
     And User click button register
     Then User verify the resutlt
 
-    Examples: 
-      | email                | passworld   | status  |
-      | phuongnam1@gmail.com | phuongnam   | success |
-      | phuongnamok          | saidinhdang | Fail    |
-      |            323212323 | phuongnam   | Fail    |
-      | namvp@viettel.com.vn |             | Fail    |
+    Examples:
+      | email                  | passworld   | status  |
+      | phuongnam001@gmail.com | phuongnam   | success |
+      | phuongnamok            | saidinhdang | Fail    |
+      | 323212323              | phuongnam   | Fail    |
+      | namvp@viettel.com.vn   |             | Fail    |
