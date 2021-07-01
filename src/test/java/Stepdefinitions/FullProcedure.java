@@ -5,12 +5,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-public class UserStep {
+public class FullProcedure {
     @Steps
     AllStepProcess Login;
     @Steps
     BillingStep bill;
-
     @Given("user Local page")
     public void user_local_page() {
         Login.OpenApp();
@@ -69,17 +68,17 @@ public class UserStep {
     }
     @When("User Typed Company")
     public void user_typed_company() throws Throwable {
-      bill.TypeCompany();
+        bill.TypeCompany();
         Thread.sleep(1000);
     }
     @When("User Typed Address")
     public void user_typed_address() throws Throwable {
-       bill.TypeAddress();
+        bill.TypeAddress();
         Thread.sleep(1000);
     }
     @When("user Typed PostCode")
     public void user_typed_post_code() throws Throwable {
-       bill.TypePostcode();
+        bill.TypePostcode();
         Thread.sleep(1000);
     }
     @When("user Typed City")
@@ -107,6 +106,6 @@ public class UserStep {
     @Then("user Can Check details off bill")
     public void user_can_check_details_off_bill() throws Throwable {
         Thread.sleep(7000);
-
     }
 }
+
